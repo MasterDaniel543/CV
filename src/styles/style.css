@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.cv-container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las columnas */
+.columna-izquierda {
+  width: 30%;
+  background-color: #0d1041;
+  padding: 20px;
+}
+
+.columna-derecha {
+  width: 70%;
+  background-color: #e4e4e4 ;
+  padding: 20px;
+}
+
+/* Estilos para los encabezados y párrafos */
+h1,
+h2,
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p,
+.card-text {
+  line-height: 1.6;
+  color: #0d1041;
+  text-align: justify;
+}
+
+/* Estilos para los separadores y secciones */
+.seccion {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+/* Estilos para los iconos */
+.icono {
+  margin-right: 5px;
+}
+
+/* Estilos para los titulos de las cards */
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.center-titulos {
+  text-align: center;
+  color: #0d1041;
+}
+
+.nombre {
+  color: #ffffff;
+}
+
+.custom-list-item {
+  color: #0d1041 !important; /* Añade !important para asegurar que se aplique */
+  background-color: #f0f0f0;
+}
+
+.titulo-experiencia {
+  color: #0d1041;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column; /* Apila las columnas */
+    width: 95%; /* Aumenta el ancho en pantallas pequeñas */
+  }
+
+  .columna-izquierda,
+  .columna-derecha {
+    width: 100%; /* Las columnas ocupan todo el ancho */
+  }
+}
+
+@media (max-width: 576px) {
+  .cv-container {
+    width: 100%; /* Aumenta el ancho en pantallas extra pequeñas */
+    margin: 10px auto;
+  }
+}
+
