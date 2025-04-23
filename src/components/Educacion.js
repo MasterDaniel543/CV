@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '../styles/Educacion.css'
+
 
 function Educacion() {
   return (

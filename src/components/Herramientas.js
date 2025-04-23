@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '../styles/Herramientas.css';
+
 
 function Herramientas() {
   const listVariants = {
@@ -32,7 +34,7 @@ function Herramientas() {
               >
                 <ListGroup variant="flush">
                   <motion.div variants={itemVariants}>
-                    <ListGroup.Item className="custom-list-item">MySQL</ListGroup.Item>
+                    <ListGroup.Item className="custom-list-item">Bases de Datos Relacionales (MySQL) y Bases de Datos NoSQL (MongoDB)</ListGroup.Item>
                   </motion.div>
                   <motion.div variants={itemVariants}>
                     <ListGroup.Item className="custom-list-item">HTML</ListGroup.Item>
@@ -44,7 +46,7 @@ function Herramientas() {
                     <ListGroup.Item className="custom-list-item">CSS</ListGroup.Item>
                   </motion.div>
                   <motion.div variants={itemVariants}>
-                    <ListGroup.Item className="custom-list-item">Actualmente aprendiendo: React y otros frameworks</ListGroup.Item>
+                    <ListGroup.Item className="custom-list-item">Actualmente mejorando en: React y otros frameworks</ListGroup.Item>
                   </motion.div>
                 </ListGroup>
               </motion.div>

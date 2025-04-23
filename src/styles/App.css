@@ -1,0 +1,107 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #f4f4f4, #e8e8e8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.cv-container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 15px;
+  animation: fadeInScale 1s ease-out;
+  transition: all 0.4s ease;
+}
+
+/* Column styles */
+.columna-izquierda {
+  width: 30%;
+  background: linear-gradient(145deg, #0d1041, #1a1f6a);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.columna-derecha {
+  width: 70%;
+  background: linear-gradient(145deg, #e4e4e4, #f5f5f5);
+  padding: 20px;
+}
+
+/* Common styles */
+.seccion {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.3);
+  transition: all 0.3s ease;
+}
+
+.center-titulos {
+  text-align: center;
+  color: #0d1041;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.nombre {
+  color: #ffffff;
+  animation: glow 3s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Animations */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255,255,255,0.5),
+                 0 0 30px rgba(255,255,255,0.3);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .columna-izquierda,
+  .columna-derecha {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cv-container {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 0;
+  }
+}

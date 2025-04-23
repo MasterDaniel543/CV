@@ -1,6 +1,6 @@
 // App.js
 import React, { useEffect } from 'react';
-import './styles/style.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,6 +11,9 @@ import Herramientas from './components/Herramientas';
 import Idiomas from './components/Idiomas';
 import Contacto from './components/Contacto';
 import Objetivo from './components/Objetivo';
+
+// Add this import at the top with other imports
+import SocialMedia from './components/SocialMedia';
 
 function App(){
   useEffect(() => {
@@ -29,6 +32,7 @@ function App(){
         </h1>
         <Perfil />
         <Contacto />
+        <SocialMedia />
         <Objetivo />
       </div>
       <div className='columna-derecha' data-aos="fade-left">

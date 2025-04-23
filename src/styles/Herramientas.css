@@ -1,0 +1,30 @@
+.tools-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  position: relative;
+}
+
+.tools-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+}
+
+.tools-card .custom-list-item {
+  color: #0d1041 !important;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 5px 0;
+}
+
+.tools-card .custom-list-item:hover {
+  transform: translateX(15px) scale(1.02);
+  background: linear-gradient(145deg, #e8e8e8, #ffffff);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

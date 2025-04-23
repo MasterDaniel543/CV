@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '../styles/Idiomas.css';
 
 function Idiomas() {
   return (
@@ -8,7 +9,7 @@ function Idiomas() {
       <h3 className="center-titulos my-3">IDIOMAS</h3>
       <Row>
         <Col>
-          <Card>
+          <Card className="languages-card">
             <Card.Body>
               <ListGroup variant="flush">
                 <motion.div
