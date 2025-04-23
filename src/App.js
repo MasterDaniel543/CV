@@ -11,8 +11,6 @@ import Herramientas from './components/Herramientas';
 import Idiomas from './components/Idiomas';
 import Contacto from './components/Contacto';
 import Objetivo from './components/Objetivo';
-
-// Add this import at the top with other imports
 import SocialMedia from './components/SocialMedia';
 
 function App(){
@@ -27,6 +25,10 @@ function App(){
   return (
     <div className='cv-container'>
       <div className='columna-izquierda' data-aos="fade-right">
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
         <h1 className='nombre'>
           Daniel Esparza
         </h1>

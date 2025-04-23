@@ -61,6 +61,36 @@ function Experiencia() {
               </Card.Body>
             </Card>
           </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.02, x: 15 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <Card className="experience-card" data-aos="zoom-in" data-aos-delay="400">
+              <Card.Body>
+                <Card.Title>Car Information - Proyecto Personal</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">DESARROLLO FRONTEND | PROYECTO DEMOSTRATIVO</Card.Subtitle>
+                <Card.Text>
+                  Desarrollo de una aplicación web moderna para gestión de información automotriz, implementando características avanzadas de seguridad y experiencia de usuario.
+                </Card.Text>
+                <ul>
+                  <li><strong>Características Principales:</strong> Sistema de autenticación multi-rol, panel administrativo, diseño responsivo, autenticación 2FA, recuperación de contraseña vía SMS</li>
+                  <li><strong>Tecnologías Frontend:</strong> React.js, CSS, Axios, JWT, React Router</li>
+                  <li><strong>Componentes Destacados:</strong> Catálogo con filtros dinámicos, gestión de perfiles, formularios seguros, visualización de imágenes cifradas</li>
+                </ul>
+                <Card.Text>
+                  <a 
+                    href="https://car-information.onrender.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ color: '#0d1041', textDecoration: 'none', display: 'flex', alignItems: 'center', marginTop: '10px' }}
+                  >
+                    🚀 Ver Proyecto Demostrativo <span style={{ fontSize: '0.8em', marginLeft: '10px', color: '#666' }}>👆 Click para visitar</span>
+                  </a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </motion.div>
         </Col>
       </Row>
     </Container>
