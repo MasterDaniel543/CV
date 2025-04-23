@@ -20,40 +20,34 @@ function Contacto() {
               >
                 <FontAwesomeIcon icon={faPhone} className="me-2" /> 449-182-9369
               </motion.p>
-              <OverlayTrigger
-                placement="right"
-                overlay={<Tooltip>Click para enviar mensaje por WhatsApp</Tooltip>}
+              <motion.p 
+                whileHover={{ scale: 1.05, x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                style={{ cursor: 'pointer' }}
               >
-                <motion.p 
-                  whileHover={{ scale: 1.05, x: 10 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                <a 
+                  href="https://wa.me/524494676251?text=Hola,%20vi%20tu%20CV%20y%20me%20gustaría%20contactarte" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: 'inherit', textDecoration: 'none' }}
                 >
-                  <a 
-                    href="https://wa.me/524494676251?text=Hola,%20vi%20tu%20CV%20y%20me%20gustaría%20contactarte" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ color: 'inherit', textDecoration: 'none' }}
-                  >
-                    <FontAwesomeIcon icon={faWhatsapp} className="me-2" style={{ color: '#25D366' }} /> 449-467-6251
-                  </a>
-                </motion.p>
-              </OverlayTrigger>
-              <OverlayTrigger
-                placement="right"
-                overlay={<Tooltip>Click para enviar email</Tooltip>}
+                  <FontAwesomeIcon icon={faWhatsapp} className="me-2" style={{ color: '#25D366' }} /> 449-467-6251
+                  <span style={{ fontSize: '0.8em', marginLeft: '10px', color: '#666' }}>👆 Click para enviar mensaje</span>
+                </a>
+              </motion.p>
+              <motion.p 
+                whileHover={{ scale: 1.05, x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                style={{ cursor: 'pointer' }}
               >
-                <motion.p 
-                  whileHover={{ scale: 1.05, x: 10 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                <a 
+                  href="mailto:diegodanieljimenezesparza4@gmail.com"
+                  style={{ color: 'inherit', textDecoration: 'none' }}
                 >
-                  <a 
-                    href="mailto:diegodanieljimenezesparza4@gmail.com"
-                    style={{ color: 'inherit', textDecoration: 'none' }}
-                  >
-                    <FontAwesomeIcon icon={faEnvelope} className="me-2" /> diegodanieljimenezesparza4@gmail.com
-                  </a>
-                </motion.p>
-              </OverlayTrigger>
+                  <FontAwesomeIcon icon={faEnvelope} className="me-2" /> diegodanieljimenezesparza4@gmail.com
+                  <span style={{ fontSize: '0.8em', marginLeft: '10px', color: '#666' }}>👆 Click para enviar email</span>
+                </a>
+              </motion.p>
             </Card.Body>
           </Card>
         </Col>
